@@ -7,5 +7,9 @@
   <input type="text" placeholder="Wedding Task" name="wedding_task">
   <input type="submit" value="Add Task">
 </form>
+
+<% wedding_tasks.each do |task| %>
+<%= task[:name] %>
+  <%end%>
 </body>
 </html>
